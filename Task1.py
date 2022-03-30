@@ -1,0 +1,20 @@
+from selenium import webdriver
+import  time
+driver = webdriver.Chrome("C:\Drivers\chromedriver.exe")
+time.sleep(4)
+driver.get("https://www.flipkart.com/")
+time.sleep(5)
+
+driver.find_element_by_xpath("//button[@class = '_2KpZ6l _2doB4z']").click()
+time.sleep(2)
+driver.find_element_by_xpath("//input[@class = '_3704LK']").click()
+driver.find_element_by_xpath("//input[@class = '_3704LK']").send_keys('iphone 12')
+time.sleep(2)
+driver.find_element_by_xpath("//button[@class ='L0Z3Pu']").click()
+time.sleep(2)
+driver.find_element_by_xpath("//div[contains(text(),'APPLE iPhone 12 (Green, 128 GB)')]").click()
+time.sleep(3)
+# print(driver.find_element_by_xpath("//div[@class = '_30jeq3 _16Jk6d']").text)
+driver.find_element_by_xpath("//button[@class ='_2KpZ6l _2U9uOA _3v1-ww']").click()
+time.sleep(4)
+driver.find_element_by_xpath("//button[@class ='_23FHuj'][2]").click()
